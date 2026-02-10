@@ -432,6 +432,29 @@ h1{
 
 </div>
 <script>
+window.onload = () => {
+    let scrollSpeed = 0.4; // smooth romantic speed
+    let scrolling = true;
+
+    function autoScroll() {
+        if (!scrolling) return;
+
+        window.scrollBy(0, scrollSpeed);
+
+        // bottom reach aana stop
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
+            scrolling = false;
+            return;
+        }
+
+        requestAnimationFrame(autoScroll);
+    }
+
+    // small delay for images/videos to load properly
+    setTimeout(() => {
+        autoScroll();
+    }, 1500);
+};
 /* Floating hearts dynamically */
 setInterval(() => {
     const heart = document.createElement("div");
@@ -449,3 +472,4 @@ setInterval(() => {
 
 </body>
 </html>
+
