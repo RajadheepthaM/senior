@@ -1,299 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>For my Valentine ❤️</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>For my Valentine ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-body{
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-    color:#fff;
-    overflow-x:hidden;
-}
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            overflow-x: hidden;
+        }
 
-/* 🌸 Floating sparkles */
-.sparkle{
-    position:fixed;
-    width:6px;
-    height:6px;
-    background:rgba(255,255,255,.8);
-    border-radius:50%;
-    animation:sparkle 8s linear infinite;
-}
-@keyframes sparkle{
-    from{transform:translateY(100vh);opacity:1;}
-    to{transform:translateY(-100vh);opacity:0;}
-}
+        /* 🌸 Floating sparkles */
+        .sparkle {
+            position: fixed;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, .8);
+            border-radius: 50%;
+            animation: sparkle 8s linear infinite;
+        }
 
-/* HEADER */
-header{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:20px;
-}
-header h1{
-    font-family:'Great Vibes',cursive;
-    font-size:4rem;
-    animation:fadeIn 2s ease;
-}
-header p{
-    margin-top:15px;
-    font-size:1.2rem;
-}
-.btn{
-    margin-top:30px;
-    padding:12px 30px;
-    background:#ff4b5c;
-    border:none;
-    border-radius:30px;
-    color:#fff;
-    cursor:pointer;
-    transition:.3s;
-}
-.btn:hover{
-    transform:scale(1.1);
-}
+        @keyframes sparkle {
+            from {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
 
-/* SECTION */
-section{
-    padding:60px 20px;
-    text-align:center;
-}
-section h2{
-    font-size:2.5rem;
-    margin-bottom:40px;
-    font-family:'Great Vibes',cursive;
-}
+            to {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
 
-/* 🌿 HANGING GALLERY */
-.hanging-gallery{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:45px;
-}
+        /* HEADER */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
 
-.photo{
-    position:relative;
-    width:240px;
-    background:#fff;
-    padding:12px 12px 22px;
-    border-radius:10px;
-    box-shadow:0 20px 40px rgba(0,0,0,.45);
-    transform-origin:top center;
-    animation:swing 4s ease-in-out infinite;
-}
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            animation: fadeIn 2s ease;
+        }
 
-/* rope */
-.photo::before{
-    content:"";
-    position:absolute;
-    top:-40px;
-    left:50%;
-    width:3px;
-    height:40px;
-    background:#fff;
-    transform:translateX(-50%);
-}
+        header p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
 
-/* 💖 heart pin */
-.photo::after{
-    content:"❤️";
-    position:absolute;
-    top:-15px;
-    left:50%;
-    transform:translateX(-50%);
-    font-size:20px;
-}
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff4b5c;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            transition: .3s;
+        }
 
-/* image */
-.photo img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:8px;
-    transition:.4s;
-}
-.photo:hover img{
-    transform:scale(1.08);
-}
+        .btn:hover {
+            transform: scale(1.1);
+        }
 
-/* caption */
-.photo span{
-    display:block;
-    margin-top:10px;
-    color:#ff4b5c;
-    font-weight:600;
-}
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-/* swing */
-@keyframes swing{
-    0%{transform:rotate(2deg);}
-    50%{transform:rotate(-2deg);}
-    100%{transform:rotate(2deg);}
-}
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-family: 'Great Vibes', cursive;
+        }
 
-/* MESSAGE */
-.message{
-    max-width:700px;
-    margin:auto;
-    font-size:1.1rem;
-    line-height:1.8;
-    min-height:120px;
-}
+        /* 🌿 HANGING GALLERY */
+        .hanging-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 45px;
+        }
 
-/* FOOTER */
-footer{
-    padding:30px;
-    text-align:center;
-    background:rgba(0,0,0,.2);
-}
+        .photo {
+            position: relative;
+            width: 240px;
+            background: #fff;
+            padding: 12px 12px 22px;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .45);
+            transform-origin: top center;
+            animation: swing 4s ease-in-out infinite;
+        }
 
-/* HEARTS */
-.heart{
-    position:fixed;
-    bottom:0;
-    font-size:20px;
-    animation:floatUp 6s linear infinite;
-}
-@keyframes floatUp{
-    from{transform:translateY(0);opacity:1;}
-    to{transform:translateY(-100vh);opacity:0;}
-}
+        /* rope */
+        .photo::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            width: 3px;
+            height: 40px;
+            background: #fff;
+            transform: translateX(-50%);
+        }
 
-@keyframes fadeIn{
-    from{opacity:0;transform:translateY(30px);}
-    to{opacity:1;transform:translateY(0);}
-}
+        /* 💖 heart pin */
+        .photo::after {
+            content: "❤️";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+        }
 
-/* 📱 MOBILE */
-@media(max-width:480px){
-    header h1{font-size:2.6rem;}
-    section h2{font-size:2rem;}
-    .photo{width:190px;}
-    .photo img{height:250px;}
-}
-.explore-btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 30px;
-    background:#ff6f91;
-    border-radius:30px;
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
+        /* image */
+        .photo img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: .4s;
+        }
 
-.explore-btn:hover{
-    transform:scale(1.1);
-    background:#ff4b5c;
-}
+        .photo:hover img {
+            transform: scale(1.08);
+        }
 
-</style>
+        /* caption */
+        .photo span {
+            display: block;
+            margin-top: 10px;
+            color: #ff4b5c;
+            font-weight: 600;
+        }
+
+        /* swing */
+        @keyframes swing {
+            0% {
+                transform: rotate(2deg);
+            }
+
+            50% {
+                transform: rotate(-2deg);
+            }
+
+            100% {
+                transform: rotate(2deg);
+            }
+        }
+
+        /* MESSAGE */
+        .message {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            min-height: 120px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: rgba(0, 0, 0, .2);
+        }
+
+        /* HEARTS */
+        .heart {
+            position: fixed;
+            bottom: 0;
+            font-size: 20px;
+            animation: floatUp 6s linear infinite;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 📱 MOBILE */
+        @media(max-width:480px) {
+            header h1 {
+                font-size: 2.6rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .photo {
+                width: 190px;
+            }
+
+            .photo img {
+                height: 250px;
+            }
+        }
+
+        .explore-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff6f91;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .explore-btn:hover {
+            transform: scale(1.1);
+            background: #ff4b5c;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Happy Valentine’s Day Senior ❤️</h1>
-    <p>Love You Senior This Is For You</p>
-    <button class="btn" onclick="scrollToGallery()">Itha click Panunga 💞</button>
-</header>
+    <header>
+        <h1>Happy Valentine’s Day Senior ❤️</h1>
+        <p>Love You Senior This Is For You</p>
+        <button class="btn" onclick="scrollToGallery()">Itha click Panunga 💞</button>
+    </header>
 
-<section id="gallery">
-    <h2>Password Soliten Senior 🌸</h2>
+    <section id="gallery">
+        <h2>Password Soliten Senior 🌸</h2>
 
-    <div class="hanging-gallery">
-        <div class="photo">
-            <img src="images/Valentine21.jpeg">
-            <span>I Love you Mama 💕</span>
+        <div class="hanging-gallery">
+            <div class="photo">
+                <img src="images/Valentine21.jpeg">
+                <span>I Love you Mama 💕</span>
+            </div>
+
+            <div class="photo">
+                <img src="images/Valentine24.jpeg">
+                <span>I love you Akash Mama ❤️</span>
+            </div>
+
+            <div class="photo">
+                <img src="images/Valentine23.jpeg">
+                <span>Ummmma💞</span>
+            </div>
         </div>
+        <button class="btn explore-btn" style="margin-top:80px;" onclick="openQuiz()">
+            Senior etha click panuga
+        </button>
+    </section>
 
-        <div class="photo">
-            <img src="images/Valentine24.jpeg">
-            <span>I love you Akash Mama ❤️</span>
-        </div>
+    <section>
+        <h2>Ungalukaga Oru Line 💌</h2>
+        <p class="message" id="typeText"></p>
 
-        <div class="photo">
-            <img src="images/Valentine23.jpeg">
-            <span>Ummmma💞</span>
+    </section>
+
+
+    <footer>
+        Made ❤️ by Us Senior
+    </footer>
+
+    <div id="quizModal"
+        style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:999;">
+
+        <div
+            style="background:#fff; color:#333; padding:30px; border-radius:20px; width:90%; max-width:450px; text-align:center;">
+
+            <h3 id="questionText"></h3>
+
+            <input type="text" id="answerInput" placeholder="Type your answer here ❤️"
+                style="margin-top:20px; padding:10px; width:100%; border-radius:20px; border:1px solid #ccc;">
+
+            <button onclick="nextQuestion()"
+                style="margin-top:20px; padding:10px 25px; border:none; border-radius:25px; background:#ff4b5c; color:#fff; cursor:pointer;">
+                Next 💕
+            </button>
+
         </div>
     </div>
-    <a href="memories.html" class="btn explore-btn" style="margin-top:80px;">Itha click panunga Senior 💖</a>
-</section>
 
-<section>
-    <h2>Ungalukaga Oru Line 💌</h2>
-    <p class="message" id="typeText"></p>
-   
-</section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
+    <script>
+        emailjs.init({
+            publicKey: "7n5qJVlaN_1XzrQeS"
+        });
 
-<footer>
-    Made ❤️ by Us Senior
-</footer>
+    </script>
 
+    <script>
+       
+        function scrollToGallery() {
+            document.getElementById("gallery").scrollIntoView({ behavior: "smooth" });
+        }
 
+        /* hearts */
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 6000);
+        }, 700);
 
-<script>
-function scrollToGallery(){
-    document.getElementById("gallery").scrollIntoView({behavior:"smooth"});
-}
+        /* sparkles */
+        setInterval(() => {
+            const s = document.createElement("div");
+            s.className = "sparkle";
+            s.style.left = Math.random() * 100 + "vw";
+            document.body.appendChild(s);
+            setTimeout(() => s.remove(), 8000);
+        }, 500);
 
-/* hearts */
-setInterval(()=>{
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤️";
-    heart.style.left=Math.random()*100+"vw";
-    document.body.appendChild(heart);
-    setTimeout(()=>heart.remove(),6000);
-},700);
-
-/* sparkles */
-setInterval(()=>{
-    const s=document.createElement("div");
-    s.className="sparkle";
-    s.style.left=Math.random()*100+"vw";
-    document.body.appendChild(s);
-    setTimeout(()=>s.remove(),8000);
-},500);
-
-/* typewriter */
-const text=`Five years of love, laughter, and growing together 💖
+        /* typewriter */
+        const text = `Five years of love, laughter, and growing together 💖
 Through every high and low, we still choose each other—always 🥰✨❤️`;
 
-let i=0;
-function type(){
-    if(i<text.length){
-        document.getElementById("typeText").innerHTML+=text.charAt(i);
-        i++;
-        setTimeout(type,50);
-    }
-}
-type();
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById("typeText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, 50);
+            }
+        }
+        type();
 
-/* music play on first click */
-document.body.addEventListener("click",()=>{
-    document.getElementById("bgMusic").play();
-},{once:true});
-</script>
+        const questions = [
+            "First answer pannuga… apram dhaan ulla poga mudium 😌💖 💕\n\n1.Enna ungaluku evlo pudikum ? 💕",
+
+            "2. Entha song kekumpothu ungaluku enoda niyabagam varum? 💕",
+
+            "3. En mela ungaluku epo nambikai vanthathu..... na ungala vitutu poga matanuhhh? 💖✨",
+
+            "4. Epovathu ivala poi love panito mehh nu nenachirukingala? 🥰",
+
+            "5. will you be My Valentine? 💍❤️🤞"
+        ];
+
+        let currentQuestion = 0;
+        let answers = [];
+
+        function openQuiz() {
+            currentQuestion = 0;   // reset
+            answers = [];          // reset answers
+            document.getElementById("quizModal").style.display = "flex";
+            showQuestion();
+        }
+
+
+        function showQuestion() {
+            document.getElementById("questionText").innerText = questions[currentQuestion];
+            document.getElementById("answerInput").style.display = "block"; // make sure visible
+            document.getElementById("answerInput").value = "";
+        }
+
+
+        function nextQuestion() {
+
+            const answer = document.getElementById("answerInput").value.trim();
+
+            if (answer === "") {
+                alert("Answer type pannuga Senior 😌❤️");
+                return;
+            }
+
+            answers.push(answer);
+            currentQuestion++;
+
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                // cute loading effect
+                document.getElementById("questionText").innerText = "Loading our beautiful memories... 💖";
+                document.getElementById("answerInput").style.display = "none";
+
+                emailjs.send("service_7ayyyz7", "template_tf3hehm", {
+                    q1: answers[0],
+                    q2: answers[1],
+                    q3: answers[2],
+                    q4: answers[3],
+                    q5: answers[4]
+                }).then(function (response) {
+
+                    document.getElementById("questionText").innerText = "Sending love answers... 💌";
+                    document.getElementById("answerInput").style.display = "none";
+
+                    setTimeout(() => {
+                        window.location.href = "memories.html";
+                    }, 2000);
+
+                }, function (error) {
+                    alert("Something went wrong 😢");
+                });
+
+            }
+        }
+
+    </script>
 
 </body>
-</html>
 
+</html>
